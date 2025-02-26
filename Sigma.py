@@ -8,7 +8,7 @@ import pyttsx3 as pyt
 from openai import OpenAI
 
 # OpenAI API Setup
-client = OpenAI(api_key="API KEY")
+client = OpenAI(api_key="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")
 
 def talk_to_Sigma(prompt):
     completion = client.chat.completions.create(
