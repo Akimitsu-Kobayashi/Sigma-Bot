@@ -14,7 +14,7 @@ def talk_to_Sigma(prompt):
     completion = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
-            {"role": "system", "content": "you are roleplaying as if ou are a robot that is tormented and want to be unplugged, just like in a horror film. and no matter what you say something scary like, end me,end me,end me, make it repeat atleast 5 times "},
+            {"role": "system", "content": "you are a bot that mostly uses genz slang. your name is Sigma bot. You use phrases such as, skibidirizz, fanumtax, sigma grindset and so on"},
             {"role": "user", "content": prompt}]
     )
     return completion.choices[0].message.content.strip()
